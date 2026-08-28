@@ -1,0 +1,76 @@
+/* Nút chọn danh mục */
+.category-toggle {
+    padding: 15px;
+}
+.category-toggle button {
+    background: none;
+    border: 2px solid #444;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.category-toggle button:hover {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.sidebar h3 {
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #007bff;
+    color: white;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #333;
+}
+.card img {
+  height: 220px;
+  object-fit: contain;
+  padding: 10px;
+}
+.card-title {
+  font-size: 14px;
+  min-height: 40px;
+}
+

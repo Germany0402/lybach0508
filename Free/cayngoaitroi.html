@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOW Garden</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS riêng -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="huongdan.css">
+  <link rel="stylesheet" href="header.js">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="bg-dark text-white py-1 px-3 d-flex justify-content-between">
+    <small>08:30 - 22:00 • 0838 369 639 - 09 6688 9393</small>
+    <a href="#" class="text-white text-decoration-none">Login</a>
+  </div>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-success" href="#">MOW</a>
+
+      <!-- Nút toggle mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Cây trong nhà</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cây ngoài trời</a>
+            <div class="mega-menu">
+              <div class="column">
+                <h4>Theo kiểu dáng</h4>
+                <a href="#">Cây Tầm Trung</a>
+                <a href="#">Cây Tầm Thấp</a>
+                <a href="#">Tán Hình Tròn</a>
+                <a href="#">Tán Hình Tháp</a>
+                <a href="#">Tán Phân Tầng</a>
+              </div>
+              <div class="column">
+                <h4>Theo đặc điểm</h4>
+                <a href="#">Cây Thường Xanh</a>
+                <a href="#">Cây Lá Màu</a>
+                <a href="#">Cây Dạng Bụi</a>
+                <a href="#">Cây Leo Dàn</a>
+                <a href="#">Cây Thân Đốt</a>
+              </div>
+              <div class="column">
+                <h4>Theo chức năng</h4>
+                <a href="#">Cây Bóng Mát</a>
+                <a href="#">Cây Có Hoa</a>
+                <a href="#">Cây Ăn Quả</a>
+                <a href="#">Cây Hàng Rào</a>
+                <a href="#">Cây Phủ Nền</a>
+                <a href="#">Cỏ Nền</a>
+              </div>
+            </div>
+            <script src="header.js"></script>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Chậu cây</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Phụ kiện</a></li>
+          <li class="nav-item"><a class="nav-link" href="huongdan.html">Hướng dẫn</a></li>
+        </ul>
+        <!-- Icon -->
+        <div class="d-flex align-items-center">
+          <a href="#" class="me-3 text-dark"><i class="fa fa-heart"></i></a>
+          <a href="#" class="me-3 text-dark"><i class="fa fa-shopping-cart"></i> <span>0đ</span></a>
+          <a href="#" class="text-dark"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+   </nav>
+
+    <!-- Banner Cây Ngoài Trời -->
+   <section class="position-relative">
+    <img src="/img/Banner-ngoai-troi.jpg" class="img-fluid w-100" style="height: 450px; object-fit: cover;" alt="Banner">
+    <div class="position-absolute top-50 start-0 translate-middle-y p-4 bg-white bg-opacity-75 rounded shadow ms-4" style="max-width: 400px;">
+      <h2 class="text-success">CÂY NGOÀI TRỜI</h2>
+      <p>
+            Được ngồi cùng với nhau trò chuyện dưới những tán cây xanh mát, xung quanh là hoa cỏ thơm ngát, có làn gió nhẹ nhàng thoáng qua. Hãy để MOW Garden giúp bạn tạo nên một khu vườn thật tuyệt vời nhé.
+      </p>
+
+    </div>
+  </section>
+
+
+    <!-- Breadcrumb + Bộ lọc -->
+    <div class="container my-4">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cây Ngoài Trời</li>
+            </ol>
+        </nav>
+
+         <!-- Nút chọn danh mục -->
+        <div class="category-toggle">
+            <button id="openCategories">☰ CHỌN DANH MỤC</button>
+        </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end align-items-center gap-3">
+        <span>Showing 1–48 of 84 results</span>
+        <select class="form-select w-auto">
+            <option>Sort by latest</option>
+            <option>Sort by price: low to high</option>
+            <option>Sort by price: high to low</option>
+        </select>
+        </div>
+    </div>
+    </div>
+
+    <div class="container my-4">
+  <div class="row">
+
+    <!-- Sản phẩm 1 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose2.jpg" class="card-img-top" alt="Hoa hồng ngoại Carey">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng ngoại Carey màu hồng size nhỏ ROSE012</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sản phẩm 2 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose1.jpg" class="card-img-top" alt="Hoa hồng leo Herzogin">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng leo Herzogin màu trắng phớt size nhỏ ROSE011</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sản phẩm 3 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose3.jpg" class="card-img-top" alt="Hoa hồng leo Crown Princess">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng leo Crown Princess Margareta size nhỏ ROSE010</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sản phẩm 4 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose4.jpg" class="card-img-top" alt="Hoa hồng leo Lady of Shalott">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng leo Lady of Shalott form cúp size nhỏ ROSE009</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Sản phẩm 4 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose4.jpg" class="card-img-top" alt="Hoa hồng leo Lady of Shalott">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng leo Lady of Shalott form cúp size nhỏ ROSE009</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Sản phẩm 4 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose4.jpg" class="card-img-top" alt="Hoa hồng leo Lady of Shalott">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng leo Lady of Shalott form cúp size nhỏ ROSE009</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Sản phẩm 4 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose4.jpg" class="card-img-top" alt="Hoa hồng leo Lady of Shalott">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng leo Lady of Shalott form cúp size nhỏ ROSE009</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Sản phẩm 4 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center">
+        <img src="/img/rose4.jpg" class="card-img-top" alt="Hoa hồng leo Lady of Shalott">
+        <div class="card-body">
+          <h6 class="card-title">Hoa hồng leo Lady of Shalott form cúp size nhỏ ROSE009</h6>
+          <p class="text-success fw-bold">150.000đ</p>
+          <button class="btn btn-sm btn-success">Thêm giỏ hàng</button>
+          <button class="btn btn-sm btn-outline-secondary">Xem nhanh</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+     <!-- Footer -->
+    <footer class="text-white py-5" style="background: url('/img/footer.jpg') center/cover no-repeat;">
+      <div class="row gx-5 gy-4 px-5">
+        
+        <!-- Cột 1: Giới thiệu -->
+        <div class="col-12 col-md-4">
+          <h2 class="fw-bold mb-3">MOW</h2>
+          <p>
+            MOW Garden mong mang đến không gian sống xanh, như là một cách để khơi nguồn cảm hứng,
+            cải thiện chất lượng tinh thần tươi và đồng thời còn mang lại tính thẩm mỹ cho không gian nội thất.
+          </p>
+          <p class="fw-bold mb-1">Công ty TNHH MOW Garden</p>
+          <p>MST: 0317709035</p>
+        </div>
+
+        <!-- Cột 2: Về chúng tôi -->
+        <div class="col-6 col-md-2">
+          <h5 class="fw-bold mb-3">Về chúng tôi</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Giới thiệu</a></li>
+            <li><a href="#" class="footer-link">Liên hệ</a></li>
+            <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+            <li><a href="#" class="footer-link">Chính sách bảo hành</a></li>
+            <li><a href="#" class="footer-link">Phương thức thanh toán</a></li>
+            <li><a href="#" class="footer-link">Phương thức vận chuyển</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Liên hệ -->
+        <div class="col-6 col-md-3">
+          <h5 class="fw-bold mb-3">Liên hệ</h5>
+          <ul class="list-unstyled">
+            <li>Hotline 1: 09 6688 9393</li>
+            <li>Hotline 2: 0838 369 639</li>
+            <li>Hotline 3: 097 753 7494</li>
+            <li>Email: hotro@mowgarden.com</li>
+            <li>Địa chỉ: 256-258 Bình Thành, Bình Hưng Hòa B, Q. Bình Tân, TP.HCM</li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Mạng xã hội -->
+        <div class="col-12 col-md-3">
+        <h5 class="fw-bold mb-3">Mạng xã hội</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+
+      </div>
+    </footer>
+
+
+  
+
+</body>
+</html>
