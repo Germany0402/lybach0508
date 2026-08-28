@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOW Garden</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS riêng -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="bg-dark text-white py-1 px-3 d-flex justify-content-between">
+    <small>08:30 - 22:00 • 0838 369 639 - 09 6688 9393</small>
+    <a href="#" class="text-white text-decoration-none">Login</a>
+  </div>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-success" href="#">MOW</a>
+
+      <!-- Nút toggle mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Cây trong nhà</a>
+
+          </li>
+          <!-- Từ trang huongdan.html muốn chuyển sang cayngoaitroi.html -->
+             
+
+          <li class="nav-item"><a class="nav-link" href="cayngoaitroi.html"  >Cây ngoài trời</a> 
+        
+            <div class="mega-menu">
+              <div class="column">
+                <h4>Theo kiểu dáng</h4>
+                <a href="#">Cây Tầm Trung</a>
+                <a href="#">Cây Tầm Thấp</a>
+                <a href="#">Tán Hình Tròn</a>
+                <a href="#">Tán Hình Tháp</a>
+                <a href="#">Tán Phân Tầng</a>
+              </div>
+              <div class="column">
+                <h4>Theo đặc điểm</h4>
+                <a href="#">Cây Thường Xanh</a>
+                <a href="#">Cây Lá Màu</a>
+                <a href="#">Cây Dạng Bụi</a>
+                <a href="#">Cây Leo Dàn</a>
+                <a href="#">Cây Thân Đốt</a>
+              </div>
+              <div class="column">
+                <h4>Theo chức năng</h4>
+                <a href="#">Cây Bóng Mát</a>
+                <a href="#">Cây Có Hoa</a>
+                <a href="#">Cây Ăn Quả</a>
+                <a href="#">Cây Hàng Rào</a>
+                <a href="#">Cây Phủ Nền</a>
+                <a href="#">Cỏ Nền</a>
+              </div>
+            </div>
+            <script src="header.js"></script>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Chậu cây</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Phụ kiện</a></li>
+          <li class="nav-item"><a class="nav-link" href="huongdan.html">Hướng dẫn</a></li>
+        </ul>
+        <!-- Icon -->
+        <div class="d-flex align-items-center">
+          <a href="#" class="me-3 text-dark"><i class="fa fa-heart"></i></a>
+          <a href="#" class="me-3 text-dark"><i class="fa fa-shopping-cart"></i> <span>0đ</span></a>
+          <a href="#" class="text-dark"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+   
+  <section class="position-relative">
+    <img src="/img/banner.jpg" class="img-fluid w-100" style="height: 450px; object-fit: cover;" alt="Banner">
+    <div class="position-absolute top-50 start-0 translate-middle-y p-4 bg-white bg-opacity-75 rounded shadow ms-4" style="max-width: 400px;">
+      <h2 class="text-success">Tận hưởng không gian sống xanh</h2>
+      <p>Bổ sung thêm cây xanh là một cách đơn giản nhất để tạo ra sự thoải mái cho không gian sống của bạn, giúp mang lại hiệu quả công việc và thư giãn mỗi khi trở về.</p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Danh mục sản phẩm -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4 fw-bold">DANH MỤC SẢN PHẨM</h2>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-4">
+      <!-- 1 -->
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate1.jpg" class="img-fluid rounded" alt="Cây dễ chăm">
+          <div class="overlay">
+            <span>CÂY DỄ CHĂM</span>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate2.jpg" class="img-fluid rounded" alt="Cây văn phòng">
+          <div class="overlay">
+            <span>CÂY VĂN PHÒNG</span>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate3.jpg" class="img-fluid rounded" alt="Cây phong thủy">
+          <div class="overlay">
+            <span>CÂY PHONG THỦY</span>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate4.jpg" class="img-fluid rounded" alt="Cây để bàn">
+          <div class="overlay">
+            <span>CÂY ĐỂ BÀN</span>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate6.jpg" class="img-fluid rounded" alt="Cây lá đẹp">
+          <div class="overlay">
+            <span>CÂY LÁ ĐẸP</span>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate7.jpg" class="img-fluid rounded" alt="Chậu cây">
+          <div class="overlay">
+            <span>CHẬU CÂY</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate8.jpg" class="img-fluid rounded" alt="Chậu cây">
+          <div class="overlay">
+            <span>CHẬU CÂY</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="category-item position-relative">
+          <img src="/img/cate5.jpg" class="img-fluid rounded" alt="Chậu cây">
+          <div class="overlay">
+            <span>CHẬU CÂY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container my-5">
+    <div class="container">
+      <h2 class="text-center mb-4">SẢN PHẨM MỚI</h2>
+      <div class="product-row">
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp1.jpg" class="card-img-top product-img" alt="Cây tùng bồng lai">
+          <!-- Overlay hiện khi hover --> 
+          <div class="card-body">
+            <h6 class="card-title">Cây tùng bồng lai tiểu cảnh chậu sứ thô cắm TUBO005</h6>
+            <p class="text-success fw-bold">500.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp2.jpg" class="card-img-top product-img" alt="Cây phát tài">
+          <div class="card-body">
+            <h6 class="card-title">Cây phát tài bộ 5 – Cây thiết mộc lan CPTK001</h6>
+            <p class="text-success fw-bold">750.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp3.jpg" class="card-img-top product-img" alt="Cây kim ngân">
+          <div class="card-body">
+            <h6 class="card-title">Cây kim ngân ba thân để bàn chậu sứ gấu BearBrick LONI040</h6>
+            <p class="text-success fw-bold">280.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp4.jpg" class="card-img-top product-img" alt="Cây trầu bà">
+          <div class="card-body">
+            <h6 class="card-title">Cây trầu bà đế vương xanh chậu mặt cool ‘Imperial Green’</h6>
+            <p class="text-success fw-bold">120.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp5.jpg" class="card-img-top product-img" alt="Cây lưỡi hổ">
+          <div class="card-body">
+            <h6 class="card-title">Cây Lưỡi Hổ Vương Miện chậu sứ để bàn SANS002</h6>
+            <p class="text-success fw-bold">120.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp1.jpg" class="card-img-top product-img" alt="Cây tùng bồng lai">
+          <div class="card-body">
+            <h6 class="card-title">Cây tùng bồng lai tiểu cảnh chậu sứ thô cắm TUBO005</h6>
+            <p class="text-success fw-bold">500.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp2.jpg" class="card-img-top product-img" alt="Cây phát tài">
+          <div class="card-body">
+            <h6 class="card-title">Cây phát tài bộ 5 – Cây thiết mộc lan CPTK001</h6>
+            <p class="text-success fw-bold">750.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp3.jpg" class="card-img-top product-img" alt="Cây kim ngân">
+          <div class="card-body">
+            <h6 class="card-title">Cây kim ngân ba thân để bàn chậu sứ gấu BearBrick LONI040</h6>
+            <p class="text-success fw-bold">280.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp4.jpg" class="card-img-top product-img" alt="Cây trầu bà">
+          <div class="card-body">
+            <h6 class="card-title">Cây trầu bà đế vương xanh chậu mặt cool ‘Imperial Green’</h6>
+            <p class="text-success fw-bold">120.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp5.jpg" class="card-img-top product-img" alt="Cây lưỡi hổ">
+          <div class="card-body">
+            <h6 class="card-title">Cây Lưỡi Hổ Vương Miện chậu sứ để bàn SANS002</h6>
+            <p class="text-success fw-bold">120.000₫</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp1.jpg" class="card-img-top product-img" alt="Cây tùng bồng lai">
+          <div class="card-body">
+            <h6 class="card-title">Cây tùng bồng lai tiểu cảnh chậu sứ thô cắm TUBO005</h6>
+            <p class="text-success fw-bold">500.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp2.jpg" class="card-img-top product-img" alt="Cây phát tài">
+          <div class="card-body">
+            <h6 class="card-title">Cây phát tài bộ 5 – Cây thiết mộc lan CPTK001</h6>
+            <p class="text-success fw-bold">750.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp3.jpg" class="card-img-top product-img" alt="Cây kim ngân">
+          <div class="card-body">
+            <h6 class="card-title">Cây kim ngân ba thân để bàn chậu sứ gấu BearBrick LONI040</h6>
+            <p class="text-success fw-bold">280.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp4.jpg" class="card-img-top product-img" alt="Cây trầu bà">
+          <div class="card-body">
+            <h6 class="card-title">Cây trầu bà đế vương xanh chậu mặt cool ‘Imperial Green’</h6>
+            <p class="text-success fw-bold">120.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-col">
+        <div class="card h-100 text-center">
+          <img src="/img/sp5.jpg" class="card-img-top product-img" alt="Cây lưỡi hổ">
+          <div class="card-body">
+            <h6 class="card-title">Cây Lưỡi Hổ Vương Miện chậu sứ để bàn SANS002</h6>
+            <p class="text-success fw-bold">120.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="see-more">
+    <a href ="#">Xem thêm</a>
+  </div>
+
+      <style>
+      .icon {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+      </style>
+
+  <section class="container my-5" style="background-color: #e6935d;">
+      <div class="row align-items-center">
+      
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="/img/caycanh.jpg" alt="MOW Garden" class="img-fluid rounded shadow">
+        </div>
+
+      
+        <div class="col-md-6">
+          <h2 class="mb-4 text-center">Lý do chọn MOW Garden?</h2>
+          <div class="row">
+            
+            <div class="col-sm-6 mb-4 text-center">
+              <img src="/img/icon1.png" class="icon mb-2" alt="Tuyển chọn">
+              <h5 class="fw-bold">TUYỂN CHỌN</h5>
+              <p class="small">Mọi cây xanh đều phải được chọn lọc kỹ lưỡng</p>
+            </div>
+
+            <div class="col-sm-6 mb-4 text-center">
+              <img src="/img/icon2.png" class="icon mb-2" alt="Đa dạng">
+              <h5 class="fw-bold">ĐA DẠNG</h5>
+              <p class="small">Dễ dàng tìm được sản phẩm mà bạn mong muốn</p>
+            </div>
+
+            <div class="col-sm-6 mb-4 text-center">
+              <img src="/img/icon3.png" class="icon mb-2" alt="Đồng hành">
+              <h5 class="fw-bold">ĐỒNG HÀNH</h5>
+              <p class="small">Luôn đồng hành và giúp đỡ bạn về mặt kỹ thuật</p>
+            </div>
+
+            <div class="col-sm-6 mb-4 text-center">
+              <img src="/img/icon4.png" class="icon mb-2" alt="Đúng chuẩn">
+              <h5 class="fw-bold">ĐÚNG CHUẨN</h5>
+              <p class="small">Sử dụng hình ảnh chụp thực tế giúp dễ hình dung</p>
+            </div>
+
+            <div class="col-sm-6 mb-4 text-center">
+              <img src="/img/icon5.png" class="icon mb-2" alt="Tin cậy">
+              <h5 class="fw-bold">TIN CẬY</h5>
+              <p class="small">Gửi ảnh thực tế và cụ thể trước khi giao hàng</p>
+            </div>
+
+            <div class="col-sm-6 mb-4 text-center">
+              <img src="/img/icon6.png" class="icon mb-2" alt="Cạnh tranh">
+              <h5 class="fw-bold">CẠNH TRANH</h5>
+              <p class="small">Tối ưu hóa ngân sách nhờ mức giá cực kỳ cạnh tranh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Thông tin & Blog -->
+  <section class="py-5 bg-light">
+    <div class="container-fluid">
+      <h2 class="text-center mb-5">Thông tin & Blog</h2>
+      <div class="row g-4 px-4">
+        
+        <!-- Bài viết 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/blog1.jpg" class="card-img-top" alt="Blog 1">
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">PHONG THỦY</span>
+              <h5 class="card-title">Top 10 cây phong thủy hợp mệnh Kim giúp kích hoạt vượng khí</h5>
+              <p class="card-text">Trong phong thủy, mỗi người đều có một mệnh theo ngày sinh và mỗi mệnh...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài viết 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/blog2.jpg" class="card-img-top" alt="Blog 2">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">PHONG THỦY</span>
+              <h5 class="card-title">Hướng dẫn lựa chọn cây phong thủy trong nhà để tăng vượng khí</h5>
+              <p class="card-text">Theo quan niệm phong thủy, vượng khí là yếu tố quan trọng giúp cho ngôi nhà...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài viết 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/blog3.jpg" class="card-img-top" alt="Blog 3">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">KIẾN THỨC</span>
+              <h5 class="card-title">Cây hạnh phúc là cây gì? Hướng dẫn chăm sóc cây hạnh phúc</h5>
+              <p class="card-text">Có một loại cây cảnh trong nhà mà tên của nó chính là điều mà chúng ta ai cũng mong...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài viết 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/blog4.jpg" class="card-img-top" alt="Blog 4">
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">BLOG</span>
+              <h5 class="card-title">5 loại cây trồng trong nhà giúp thanh lọc không khí</h5>
+              <p class="card-text">Những loại cây này không chỉ làm đẹp cho không gian sống mà còn lọc không khí cực kỳ tốt...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+      <!-- Footer -->
+    <footer class="text-white py-5" style="background: url('/img/footer.jpg') center/cover no-repeat;">
+      <div class="row gx-5 gy-4 px-5">
+        
+        <!-- Cột 1: Giới thiệu -->
+        <div class="col-12 col-md-4">
+          <h2 class="fw-bold mb-3">MOW</h2>
+          <p>
+            MOW Garden mong mang đến không gian sống xanh, như là một cách để khơi nguồn cảm hứng,
+            cải thiện chất lượng tinh thần tươi và đồng thời còn mang lại tính thẩm mỹ cho không gian nội thất.
+          </p>
+          <p class="fw-bold mb-1">Công ty TNHH MOW Garden</p>
+          <p>MST: 0317709035</p>
+        </div>
+
+        <!-- Cột 2: Về chúng tôi -->
+        <div class="col-6 col-md-2">
+          <h5 class="fw-bold mb-3">Về chúng tôi</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Giới thiệu</a></li>
+            <li><a href="#" class="footer-link">Liên hệ</a></li>
+            <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+            <li><a href="#" class="footer-link">Chính sách bảo hành</a></li>
+            <li><a href="#" class="footer-link">Phương thức thanh toán</a></li>
+            <li><a href="#" class="footer-link">Phương thức vận chuyển</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Liên hệ -->
+        <div class="col-6 col-md-3">
+          <h5 class="fw-bold mb-3">Liên hệ</h5>
+          <ul class="list-unstyled">
+            <li>Hotline 1: 09 6688 9393</li>
+            <li>Hotline 2: 0838 369 639</li>
+            <li>Hotline 3: 097 753 7494</li>
+            <li>Email: hotro@mowgarden.com</li>
+            <li>Địa chỉ: 256-258 Bình Thành, Bình Hưng Hòa B, Q. Bình Tân, TP.HCM</li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Mạng xã hội -->
+        <div class="col-12 col-md-3">
+        <h5 class="fw-bold mb-3">Mạng xã hội</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
